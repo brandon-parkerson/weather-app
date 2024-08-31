@@ -1,1 +1,3 @@
 # weather-app
+
+This web app has the user type in a location into a search bar and receives information on the weather for the user. This will demonstrate my ability to utilize APIs and extract the necessary data. Then, use that data and display it for the user. On the technical side, this will demonstrate my ability to program with asynchronous code and allow functions to wait for promises to resolve before finishing the functions' instructions. 
