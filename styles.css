@@ -81,3 +81,27 @@ div {
 p {
   font-size: 20px;
 }
+
+#loading {
+  width: 5rem;
+  height: 5rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid green;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+}
+
+#loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

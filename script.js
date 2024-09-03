@@ -2,6 +2,7 @@ const btn = document.querySelector("button");
 
 // async function that gets api
 async function fetchWeather(location) {
+  displayLoading();
   // await keyword that waits for the async function promise to complete
   try {
     const response = await fetch(
@@ -19,14 +20,14 @@ async function fetchWeather(location) {
       weather.currentConditions.conditions,
       weather.description
     );
-
+    hideLoading();
     // Call render function to display data to the page
     render(weatherInfo);
   } catch {
     const body = document.querySelector("body");
     const card = document.createElement("div");
     card.classList.add("data");
-    card.innerHTML = `<h2>Enter a valid location</h2>`
+    card.innerHTML = `<h2>Enter a valid location</h2>`;
     body.appendChild(card);
     console.error("Failed");
   }
@@ -64,4 +65,14 @@ function clearRender() {
   } else {
     return;
   }
+}
+
+function displayLoading() {
+  const loader = document.querySelector("#loading");
+  loader.classList.add("display");
+}
+
+function hideLoading() {
+  const loader = document.querySelector("#loading");
+  loader.classList.remove("display");
 }
