@@ -53,7 +53,7 @@ form button {
     border: 3px solid rgb(72, 72, 177);
     border-radius: 15px;
     font-family: roboto;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 button:hover {
@@ -64,4 +64,20 @@ button:hover {
 div {
   font-family: roboto;
   text-align: center;
+}
+
+.data {
+  border: 1px solid white;
+  width: 55%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 15px;
+  font-family: roboto;
+  line-height: 2em;
+}
+
+p {
+  font-size: 20px;
 }
