@@ -52,7 +52,7 @@ function render(weatherInfo) {
   card.innerHTML = `<h2>${weatherInfo.place}</h2>
   <p>Temperature: ${weatherInfo.temp} F</p>
   <p>Humidity: ${weatherInfo.humidity}%</p>
-  <p>${weatherInfo.conditions}</p>
+  <p>Conditions: ${weatherInfo.conditions}</p>
   <p>${weatherInfo.description}</p>`;
   body.appendChild(card);
 }
